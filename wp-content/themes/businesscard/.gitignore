@@ -11,7 +11,7 @@ README.MD
 #########################
 
 .vs/
-wp-content/themes/mpaa/.vs/
+wp-content/themes/businesscard/.vs/
 *_i.c
 *_p.c
 *_i.h
@@ -86,21 +86,21 @@ Icon?
 ########
 
 .sass-cache
-wp-content/themes/mpaa/.sass-cache
+wp-content/themes/businesscard/.sass-cache
 
 
 #########
 # GRUNT #
 #########
 
-gruntfile-sample.php
 Gruntfile.js
-package-sample.json
+gruntfile.js
+grunt-config.json
+gruntfile-sample.php
 package.json
 package-lock.json
-grunt-config.json
-grunt-build-sample.js
-grunt-build.js
+package-sample.json
+
 
 node_modules
-
+wp-content/themes/businesscard/node_modules
