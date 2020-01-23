@@ -1,14 +1,22 @@
 
     <footer>
       <div class="row">
-        <div class="col-sm-3 text-left">
-          <p class="copyright">&copy;<?php echo date("Y"); ?> Best Elder Care</p>
+
+        <div class="col-xs-12 col-sm-6 text-left">
+          <p class="copyright">
+            <b>&copy;<?php echo date("Y"); ?> Best Elder Care.</b>
+            Proudly serving the Los Angeles county since 2008.
+          </p>
         </div>
-        <div class="col-sm-6 col-sm-offset-3 text-right">
-          <a href="/about">About</a>
-          <span>&nbsp;|&nbsp;</span>
-          <a href="/contact">Contact</a>
+
+        <div class="col-xs-12 col-sm-6 text-right">
+          <p class="footer-links">
+            <a href="/about">About</a>
+            <span>&nbsp;<b>|</b>&nbsp;</span>
+            <a href="/contact">Contact</a>
+          </p>
         </div>
+        
       </div>
     </footer>
 

@@ -24,19 +24,25 @@ $offwhite: #dddddd;
 $lightgray: #999999;
 $medgray: #666666;
 $darkgray: #222222;
+
+$mediumtext: 'Roboto', sans-serif;
+$lighttext: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$seriftext: Georgia, 'Times New Roman', serif;
 /*-------------------------*/
 
 
 
 body {
-    //font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    font-family: $lighttext;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
     color: $darkgray;
     word-wrap: break-word;
-    background-color: $offwhite
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 
@@ -51,10 +57,15 @@ body {
     position: fixed;
     top: 0px;
     z-index: 100;
-    box-shadow: 0px 2px 4px $darkgray;
+    box-shadow: 0px 2px 4px $lightgray;
+
+    .site-nav {
+        width: 100%;
+        height: 80px
+    }
 
     &.wp-admin-bar-fix {
-        //+32px height
+        //wp adminbar height = 32px
         padding: 42px 0 10px 0 !important;
         height: 132px !important;
     }
@@ -63,36 +74,41 @@ body {
         border-bottom: none !important;
     }
 
-    .row {
-        margin-left: 0px;
-        margin-right: 0px;
+    .nav-logo {
+        float: left;
+        display: block;
+        margin: 0 0 0 20px;
+        padding: 0;
+        height: 80px;
+        width: 360px;
+
+        img {
+            float: none;
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+        }
     }
 
-    .col-sm-2,
-    .col-sm-3,
-    .col-sm-4,
-    .col-sm-6,
-    .col-sm-8,
-    .col-sm-9,
-    .col-sm-10,
-    .col-sm-12 {
-        //padding-left: 0px;
-        //padding-right: 0px;
-    }
-
-    ul {
+    ul.nav-links {
+        float: right;
         margin: 0;
         padding: 0;
+        height: 80px;
+        width: 640px;
 
         li {
-            width: 32%; //change this value as the number of menu items increase
-            height: 80px;
+            //assumes 3 menu items only, adjust as needed
+            width: 33.3333%;
+            height: inherit;
             
             margin: 0;
             padding: 0 15px;
             float: left;
             list-style-type: none;
             background-color: #fff;
+            border-bottom: 10px solid #fff;
             transition: background-color 0.5s ease;
 
             a {
@@ -106,10 +122,23 @@ body {
                 text-decoration: none;    
             }
 
-            &.active,
-            &:hover {
+            &:hover {                
+                border-bottom: 10px solid $darkgreen;
+                
+                a {
+                    color: $darkgreen;
+                }
+            }
+
+            &.active {
+                border-bottom: 10px solid $darkgreen;
                 background-color: $darkgreen;
 
+                &:hover {
+                    a {
+                        color: #fff;
+                    }
+                }
                 a {
                     color: #fff;
                 }
@@ -130,53 +159,9 @@ body {
 
 
     @media (max-width: $md) {
-        height: 80px;
-        padding: 10px 0;
     }
 
 
-    .site-logo {
-        display: block;
-        margin: 0;
-        padding: 0;
-    }
-
-    .site-logo {
-        height: 80px;
-        width: 360px;
-        margin: 0;
-
-        img {
-            float: left;
-            width: 100%;
-            height: auto;
-            margin: 0px;
-        }
-
-        @media (max-width: $md) {
-            height: 80px;
-            margin: 10px auto;
-
-            img {
-                width: 360px;
-                height: 80px;
-                margin: 0;
-            }
-
-            .branding-text {
-                height: 40px;
-                font-size: 20px;
-                line-height: 40px;
-                margin: 10px 0;
-            }
-        }
-    }
-
-
-    @media (max-width: $sm) {
-        height: 170px;
-        padding: 0;
-    }
 }
 
 
@@ -188,75 +173,31 @@ body {
     cursor: normal;
 }
 
-.home-container {
-    width: 100%;
-    padding: 0 !important;
-    margin: 90px auto 0 auto !important;
-
-    //mobile
-    @media (max-width: $sm) {
-        padding: 0 30px !important;
-    }
-}
-
-.bc-hp-section {
-    padding: 0 60px;
-
-    //mobile
-    @media (max-width: $sm) {
-        padding: 15px 30px;
-    }
-}
-
-.bc-ui-scrolldown {
-    
-    .bc-ui-roundbutton {
-        cursor: pointer;
-        float: none;
-        clear: both;
-        display: block;
-        text-align: center;
-        height: 60px;
-        width: 60px;
-        margin: 0 auto;
-        
-
-        border: 2px solid #fff;
-        border-radius: 30px;
-        transition: background-color 0.5s ease, border-color 0.5s ease;
-        
-
-        i {
-            float: none;
-            clear: both;
-            text-align: center;
-            font-size: 36px;
-            line-height: 60px;
-            margin: 0 auto;
-            
-
-            transition: color 0.5s ease;
-        }
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 /*-------homepage--------*/
 body.home {
 
+    .home-container {
+        width: 100%;
+        padding: 0 !important;
+        margin: 90px auto 0 auto !important;
+    
+        //mobile
+        @media (max-width: $sm) {
+            padding: 0 30px !important;
+        }
+    
+        .bc-hp-section {
+            padding: 0 60px;
+        
+            //mobile
+            @media (max-width: $sm) {
+                padding: 15px 30px;
+            }
+        }
+    }
 
     #bc-hp-welcome {
         position: relative;
@@ -289,13 +230,14 @@ body.home {
                 font-weight: 300;
             }
             h1, h2, h3 {
+                font-family: $mediumtext;
                 font-size: 48px;
                 line-height: 56px;
                 margin: 0 0 48px 0;
                 color: $darkgray;
             }            
             p {
-                font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+                font-family: $lighttext;
                 font-size: 20px;
                 line-height: 26px;
                 color: $medgray;
@@ -304,13 +246,14 @@ body.home {
                 &.small {
                     font-size: 14px;
                     line-height: 20px;
+                    margin: 0 0 20px 0;
                 }
 
                 &.phone{
-                    font-family: 'Roboto', sans-serif;
-                    font-size: 24px;
-                    line-height: 32px;
-                    margin: 40px 0 0 0;                
+                    font-family: $mediumtext;
+                    font-size: 32px;
+                    line-height: 40px;
+                    margin: 40px 0;
 
                     a {
                         color: $darkgreen;
@@ -320,7 +263,7 @@ body.home {
                         cursor: pointer;
 
                         i {
-                            margin-right: 5px;
+                            margin-right: 8px;
                         }
                     }
                 }
@@ -345,26 +288,42 @@ body.home {
             }
         }
     
+
         .bc-ui-scrolldown {
             position: absolute;
-            bottom: -40px;
+            bottom: -30px;
             left: 50%;
             width: 80px;
             margin-left: -40px;
 
             .bc-ui-roundbutton {
+                cursor: pointer;
+                float: none;
+                clear: both;
+                display: block;
+                text-align: center;
                 height: 80px;
                 width: 80px;
                 background-color: #fff;
                 border: 10px solid $darkgreen;
+                border-radius: 30px;
+                transition: background-color 0.5s ease, border-color 0.5s ease;
 
                 i {
+                    float: none;
+                    clear: both;
+                    text-align: center;
                     color: $darkgreen;
+                    font-size: 36px;
+                    line-height: 60px;
+                    margin: 0 auto;
+                    transition: color 0.5s ease;
                 }
     
                 &:hover {
                     background-color: $darkgreen;
                     border: 10px solid $darkgreen;
+                    box-shadow: 0px 2px 4px $darkgray;
 
                     i {
                         color: #fff;
@@ -438,7 +397,7 @@ body.home {
             }
     
             h2, h3, h4, p, a {
-                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-family: $seriftext;
             }
             h3 {
                 font-size: 42px;
@@ -528,7 +487,7 @@ body.home {
         }
     
         h2, h3, h4, p, a {
-            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-family: $seriftext;
         }
     
         .bc-hp-client-list {
@@ -625,18 +584,20 @@ body.page {
 
 
 footer {
+    display: block;
+    width: 100%;
     min-height: 140px;
     padding: 60px 40px;
-    font-size: 14px;
-    line-height: 20px;
     background-color: #fff;
-    color: $darkgreen;
-
-    h2, h3, p, a {
-        color: $darkgreen;
-    }
+    font-family: $lighttext;
+    font-size: 16px;
+    line-height: 20px;
+    color: $darkgray;
+    box-shadow: -4px -2px 4px $medgray;
 
     a {
+        font-family: $lighttext;
+        font-weight: bold;
         color: $darkgreen;
 
         &:hover {
@@ -647,5 +608,14 @@ footer {
 
     .copyright {
         margin: 0;
+    }
+
+    .footer-links {
+        margin: 0;
+
+        span {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
     }
 }
