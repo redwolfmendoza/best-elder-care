@@ -1,10 +1,9 @@
 /*
- * Business Card theme script (v1.0)
- *
- * JMendoza
- * 
- * 
+ * Best Elder Care theme script (v1.0)
+ * Created: January 2020
+ * Author: James Mendoza (redwolfmendoza@gmail.com)
  */
+
 var debug = {
     all: false,
     ui: false
