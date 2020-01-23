@@ -2,7 +2,7 @@
     <footer>
       <div class="row">
         <div class="col-sm-3 text-left">
-          <p class="copyright">&copy;2020 Best Elder Care</p>
+          <p class="copyright">&copy;<?php echo date("Y"); ?> Best Elder Care</p>
         </div>
         <div class="col-sm-6 col-sm-offset-3 text-right">
           <a href="/about">About</a>

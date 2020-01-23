@@ -10,14 +10,14 @@
 				<a id="homepage-welcome" class="bc-anchor-link"></a>
 				<h2>High-End Elder Care Services Covered by Your MediCal and PPO</h2>
 				<p>
-					Specializing in providing individualized senior care programs for the unique 
+					Specializing in providing individualized senior wellness/care programs for the unique 
 					needs that each client presents.
 				</p>
 				<p>
-					Board-certified, multidisciplinary techniques to care for your seniors.
+					We use compassionate, board-certified, multidisciplinary techniques to care for your seniors.
 				</p>
 				<p>
-					We're here to listen to your questions and help you get answers. Call us at:
+					We're also here to listen to your questions and concerns and help you get answers. Call us toll-free at:
 				</p>
 				<p class="phone">
 					<a href="tel:1-818-555-1234">
