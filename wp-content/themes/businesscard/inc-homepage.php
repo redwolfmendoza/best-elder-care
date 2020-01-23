@@ -1,7 +1,10 @@
 
 		<div id="bc-hp-welcome" class="row bc-hp-section">
-			<div class="col-sm-6 hp-bg-1">
-				&nbsp;
+			<div class="col-sm-6">
+				<?php
+					//nivo_slider( 25 );
+					nivo_slider( "homepage-slider" );
+				?>
 			</div>
 			<div class="col-sm-6 bc-ui-intro">
 				<a id="homepage-welcome" class="bc-anchor-link"></a>
