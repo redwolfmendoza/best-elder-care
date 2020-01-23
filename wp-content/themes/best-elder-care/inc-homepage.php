@@ -49,42 +49,42 @@
 				<div class="row bc-hp-skill-list">
 					<div class="col-sm-4 text-center">
 						<i class="fas fa-notes-medical"></i>
-						<h4 class="skill-heading">[Service A]</h4>
+						<h4 class="skill-heading">Lorem Ipsum</h4>
 						<p class="skill-description">Pellentesque habitant morbi tristique senectus et 
 							netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat 
 							vitae, ultricies eget, tempor sit amet, ante.</p>
 					</div>
 					<div class="col-sm-4 text-center">
 						<i class="fas fa-heartbeat"></i>
-						<h4 class="skill-heading">[Service B]</h4>
+						<h4 class="skill-heading">Lorem Ipsum</h4>
 						<p class="skill-description">Pellentesque habitant morbi tristique senectus et 
 							netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat 
 							vitae, ultricies eget, tempor sit amet, ante.</p>
 					</div>
 					<div class="col-sm-4 text-center">
 						<i class="fas fa-procedures"></i>
-						<h4 class="skill-heading">[Service C]</h4>
+						<h4 class="skill-heading">Lorem Ipsum</h4>
 						<p class="skill-description">Pellentesque habitant morbi tristique senectus et 
 							netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat 
 							vitae, ultricies eget, tempor sit amet, ante.</p>
 					</div>
 					<div class="col-sm-4 text-center">
 						<i class="fas fa-prescription"></i>
-						<h4 class="skill-heading">[Service D]</h4>
+						<h4 class="skill-heading">Lorem Ipsum</h4>
 						<p class="skill-description">Pellentesque habitant morbi tristique senectus et 
 							netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat 
 							vitae, ultricies eget, tempor sit amet, ante.</p>
 					</div>
 					<div class="col-sm-4 text-center">
 						<i class="fas fa-wheelchair"></i>
-						<h4 class="skill-heading">[Service E]</h4>
+						<h4 class="skill-heading">Lorem Ipsum</h4>
 						<p class="skill-description">Pellentesque habitant morbi tristique senectus et 
 							netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat 
 							vitae, ultricies eget, tempor sit amet, ante.</p>
 					</div>
 					<div class="col-sm-4 text-center">
 						<i class="fas fa-stethoscope"></i>
-						<h4 class="skill-heading">[Service F]</h4>
+						<h4 class="skill-heading">Lorem Ipsum</h4>
 						<p class="skill-description">Pellentesque habitant morbi tristique senectus et 
 							netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat 
 							vitae, ultricies eget, tempor sit amet, ante.</p>

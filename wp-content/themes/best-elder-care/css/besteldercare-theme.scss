@@ -618,23 +618,22 @@ body.page {
 
 
 footer {
-    height: 60px;
-    padding: 20px 40px;
+    min-height: 140px;
+    padding: 60px 40px;
     font-size: 14px;
     line-height: 20px;
-    border-top: 5px $darkyellow solid;
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: $darkgreen;
 
     h2, h3, p, a {
-        color: #fff;
+        color: $darkgreen;
     }
 
     a {
-        color: #fff;
+        color: $darkgreen;
 
         &:hover {
-            color: #fff;
+            color: $darkgreen;
             text-decoration: underline;
         }
     }

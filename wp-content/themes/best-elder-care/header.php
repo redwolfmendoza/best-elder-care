@@ -8,13 +8,13 @@
     <meta name="description" content="">
     <meta name="author" content="redwolfmendoza@gmail.com">
 
-    <title>BusinessCard Theme</title>
+    <title>Best Elder Care</title>
     
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/all.css">
-    <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/businesscard-theme.min.css">
+    <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/besteldercare-theme.min.css">
 
   </head>
 
