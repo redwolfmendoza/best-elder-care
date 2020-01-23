@@ -6,12 +6,12 @@
 
 var debug = {
     all: false,
-    ui: false
+    ui: true
 };
 
 $(window).load(function() {
-    $('#slider').nivoSlider();
-    });
+    //$('#slider').nivoSlider();
+});
 
 $(document).ready(function() {
 
@@ -46,8 +46,19 @@ $(document).ready(function() {
 
     }
 
+    //mobile menu button
+    $('.mobile-menu-button').click(function(e){
+
+        e.preventDefault();
+        if( $('#main-nav').length > 0 ){
+            toggleMainNav();
+        }
+
+    });
+
 
 });
+
 
 // scrolls the page down to the next section for the user (homepage only)
 // requires an html element id to scroll down to
@@ -84,5 +95,21 @@ function skipDown(htmlID) {
             }, 200);	
 
         }, 200);
+    }
+}
+
+
+// toggles visibility of the main nav (mobile only)
+function toggleMainNav(){
+    if( $('#main-nav .nav-links').hasClass('active') ){
+        $('#main-nav .nav-links').removeClass('active');
+        if(debug.ui){
+            console.log('hide main-nav');
+        }
+    } else {
+        $('#main-nav .nav-links').addClass('active');
+        if(debug.ui){
+            console.log('show main-nav');
+        }
     }
 }

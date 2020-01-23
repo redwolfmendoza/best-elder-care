@@ -21,6 +21,7 @@ $bsblue: #337ab7;
 $darkblue: #11172d;
 
 $offwhite: #f3f3f3;
+$darkwhite: #dddddd;
 $lightgray: #999999;
 $medgray: #666666;
 $darkgray: #222222;
@@ -28,6 +29,9 @@ $darkgray: #222222;
 $mediumtext: 'Roboto', sans-serif;
 $lighttext: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $seriftext: Georgia, 'Times New Roman', serif;
+
+$wpadminheight: 32px;
+$wpadminheightmobile: 46px;
 /*-------------------------*/
 
 
@@ -59,21 +63,31 @@ body {
     z-index: 100;
     box-shadow: 0px 2px 4px $lightgray;
 
-    .site-nav {
-        width: 100%;
-        height: 80px
-    }
-
     &.wp-admin-bar-fix {
-        //wp adminbar height = 32px
-        padding: 42px 0 10px 0 !important;
-        height: 132px !important;
+        padding: (10px+ $wpadminheight) 0 10px 0 !important;
+        height: (100px + $wpadminheight) !important;
     }
 
     &.hide-border {
         border-bottom: none !important;
     }
 
+    button {
+        border: none;
+        box-shadow: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .main-nav-wrapper {
+        width: 100%;
+        height: 80px
+    }
+    .mobile-menu-button {
+        display: none;
+    }
     .nav-logo {
         float: left;
         display: block;
@@ -92,6 +106,7 @@ body {
     }
 
     ul.nav-links {
+        //see inc-main-nav.php for main nav links and settings
         float: right;
         margin: 0;
         padding: 0;
@@ -99,12 +114,11 @@ body {
         width: 640px;
 
         li {
-            //assumes 3 menu items only, adjust as needed
-            width: 33.3333%;
+            width: (100%/3); //adjust as number of main nav items change
             height: inherit;
             
             margin: 0;
-            padding: 0 15px;
+            padding: 0;
             float: left;
             list-style-type: none;
             background-color: #fff;
@@ -159,6 +173,106 @@ body {
 
 
     @media (max-width: $md) {
+        height: 60px;
+        padding: 0;
+        margin: 0;
+
+        &.wp-admin-bar-fix {
+            padding: ($wpadminheightmobile) 0 0 15px !important;
+            height: (60px + $wpadminheightmobile) !important;
+        }
+
+        .main-nav-wrapper {
+            height: 60px;
+        }
+
+        .nav-logo {
+            width: 240px;
+            height: 55px;
+            margin: 5px 0 0 15px;
+        }
+
+        .mobile-menu-button {
+            float: right;
+            display: block;
+            width: 72px;
+            height: 60px;
+            margin: 0;
+            background-color: #fff;
+
+            i {
+                color: $darkgreen;
+                font-size: 32px;
+                line-height: 40px;
+            }
+
+            &.active,
+            &:hover {
+                background-color: $darkgreen;
+
+                i {
+                    color: #fff;
+                }
+            }
+        }
+
+        ul.nav-links {
+            display: none;
+            width: 100%;
+            height: (60px * 3);
+            background-color: #fff;
+            float: none;
+            clear: both;
+            box-shadow: 0px 2px 4px $medgray;
+            z-index: 95;
+            border-top: $lightgray 1px solid;
+            border-bottom: $medgray 1px solid;
+
+            li {
+                width: 100%;
+                height: 60px;
+                background-color: $offwhite;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                border: none;
+                box-shadow: none;
+                border-bottom: 1px solid $darkwhite;
+
+                
+
+                &.active {
+                    border-bottom: 1px solid $darkwhite !important;
+                    background-color: $offwhite;
+
+                    a {
+                        color: $darkgreen;
+                    }
+                }
+                &:hover {
+                    background-color: $darkgreen;
+
+                    a {
+                        color: #fff;
+                    }
+                }
+                &:last-child {
+                    border-bottom: none !important;
+                }
+
+                a {
+                    width: 100%;
+                    padding: 15px 20px;
+                    font-size: 18px;
+                    line-height: 30px;
+                    height: 60px;
+                }
+            }
+
+            &.active {
+                display: block;
+            }
+        }
     }
 
 
