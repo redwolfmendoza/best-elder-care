@@ -4,19 +4,19 @@
 	$navLinks['home']['pageName'] = 'Home';
 	$navLinks['home']['url'] = 'home';
 	$navLinks['home']['pageId'] = '7'; //update this after db migration
-	$navLinks['home']['faIcon'] = '';
+	$navLinks['home']['faIcon'] = 'fas fa-home';
 	$navLinks['home']['activePage'] = false;
 
 	$navLinks['about']['pageName'] = 'About';
 	$navLinks['about']['url'] = 'about';
 	$navLinks['about']['pageId'] = '12'; //update this after db migration
-	$navLinks['home']['faIcon'] = '';
+	$navLinks['about']['faIcon'] = 'fas fa-paperclip';
 	$navLinks['about']['activePage'] = false;
 
 	$navLinks['contact']['pageName'] = 'Contact';
 	$navLinks['contact']['url'] = 'contact';
 	$navLinks['contact']['pageId'] = '14'; //update this after db migration
-	$navLinks['home']['faIcon'] = '';
+	$navLinks['contact']['faIcon'] = 'fas fa-address-book';
 	$navLinks['contact']['activePage'] = false;
 
 
@@ -25,6 +25,7 @@
 		$navLinks['home']['activePage'] = true;
 	endif;
 ?>
+
 
 <nav id="main-nav" class="main-nav-container" role="navigation">
 	<div class="main-nav-wrapper">
@@ -40,10 +41,13 @@
 				foreach( $navLinks  as $navLinkObj){
 
 					if( $currentPageId == $navLinkObj['pageId']):
-						print '<li class="active"><a href="/'. $navLinkObj['url'] .'">'. $navLinkObj['pageName'] .'</a></li>';
+						print '<li class="active">';
 					else:
-						print '<li><a href="/'. $navLinkObj['url'] .'">'. $navLinkObj['pageName'] .'</a></li>';
+						print '<li>';
 					endif;
+
+					print '<a href="/'. $navLinkObj['url'] .'"><i class="'. $navLinkObj['faIcon'] .'"></i> '. $navLinkObj['pageName'] .'</a>';
+					print '</li>';
 					
 				}
 			?>

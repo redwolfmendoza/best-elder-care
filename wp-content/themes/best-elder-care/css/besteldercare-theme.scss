@@ -133,7 +133,13 @@ body {
                 font-size: 24px;
                 line-height: 40px;
                 text-align: center;
-                text-decoration: none;    
+                text-decoration: none;
+                
+                i {
+                    font-size: 20px;
+                    line-height: 40px;
+                    margin-right: 15px;
+                }
             }
 
             &:hover {                
@@ -219,7 +225,7 @@ body {
         ul.nav-links {
             display: none;
             width: 100%;
-            height: (60px * 3);
+            height: (70px * 3);
             background-color: #fff;
             float: none;
             clear: both;
@@ -230,7 +236,7 @@ body {
 
             li {
                 width: 100%;
-                height: 60px;
+                height: 70px;
                 background-color: $offwhite;
                 text-align: center;
                 margin: 0;
@@ -262,10 +268,14 @@ body {
 
                 a {
                     width: 100%;
-                    padding: 15px 20px;
+                    padding: 20px 20px;
                     font-size: 18px;
                     line-height: 30px;
-                    height: 60px;
+                    height: 70px;
+
+                    i {
+                        margin-right: 10px;
+                    }
                 }
             }
 
