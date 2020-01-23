@@ -34,7 +34,7 @@ define('WP_HOME' , 'http://' . $_SERVER['SERVER_NAME']);
 
 
 // ** MySQL settings - You can get this info from your web host ** //
-define('DB_NAME', 'jmendoza-profile');
+define('DB_NAME', 'best-elder-care');
 define('DB_USER', 'root');
 define('DB_PASSWORD', 'mysql');
 define('DB_HOST', 'localhost');
