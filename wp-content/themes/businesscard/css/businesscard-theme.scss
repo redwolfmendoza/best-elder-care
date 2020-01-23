@@ -146,33 +146,14 @@ body {
             margin: 0px;
         }
 
-        .branding-text {
-            float: left;
-            font-size: 24px;
-            line-height: 40px;
-            height: 40px;
-            text-decoration: none;
-            margin: 20px 0;
-
-            span.a {
-                display: inline-block;
-                color: $darkred !important;
-                font-weight: bold;
-            }
-            span.b {
-                display: inline-block;
-                color: #000;
-                font-weight: normal;
-            }
-        }
-
         @media (max-width: $md) {
-            height: 60px;
+            height: 80px;
+            margin: 10px auto;
 
             img {
-                width: 50px;
-                height: 50px;
-                margin: 5px 10px 0 20px;
+                width: 360px;
+                height: 80px;
+                margin: 0;
             }
 
             .branding-text {
@@ -182,6 +163,12 @@ body {
                 margin: 10px 0;
             }
         }
+    }
+
+
+    @media (max-width: $sm) {
+        height: 170px;
+        padding: 0;
     }
 }
 
@@ -197,7 +184,7 @@ body {
 .home-container {
     width: 100%;
     padding: 0 !important;
-    margin: 80px auto 0 auto !important;
+    margin: 90px auto 0 auto !important;
 
     //mobile
     @media (max-width: $sm) {
@@ -272,8 +259,8 @@ body.home {
         .hp-bg-1,
         .bc-ui-intro {
             margin: 0;
-            padding-top: 180px;
-            padding-bottom: 0;
+            padding-top: 80px;
+            padding-bottom: 20px;
             min-height: 700px;
         }
 
@@ -287,7 +274,7 @@ body.home {
         }    
         
         .bc-ui-intro {
-            padding-left: 60px;
+            padding-left: 80px;
             padding-right: 80px;
             background-color: #fff;
     

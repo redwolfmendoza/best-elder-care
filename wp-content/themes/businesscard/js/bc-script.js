@@ -10,6 +10,10 @@ var debug = {
     ui: false
 };
 
+$(window).load(function() {
+    $('#slider').nivoSlider();
+    });
+
 $(document).ready(function() {
 
     if(debug.all) {
