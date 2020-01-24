@@ -1,4 +1,4 @@
-<div class="col-sm-3 col-sm-offset-1">
+<div class="cols-xs-12 col-sm-3 col-sm-offset-1">
   <aside class="sidebar">
 
 

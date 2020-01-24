@@ -711,7 +711,7 @@ body.page {
     .content-container {
         min-height: 800px;
         width: 100%;
-        margin: 100px auto 0 auto;
+        margin: 100px 0 0 0;
         padding: 60px;
         background-color: $offwhite;
 
@@ -780,6 +780,17 @@ body.page {
                     text-decoration: underline;
                 }
             }
+        }
+    }
+
+    //mobile
+    @media (max-width: $sm) {
+        .content-container {
+            margin: 80px 0 0 0;
+            padding: 40px 20px 20px 20px;
+        }
+
+        aside {
         }
     }
 }
