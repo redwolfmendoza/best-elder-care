@@ -9,14 +9,14 @@
           </p>
         </div>
 
-        <div class="col-xs-12 col-sm-6 text-right">
+        <div class="col-xs-12 col-sm-6">
           <p class="footer-links">
             <a href="/about">About</a>
             <span>&nbsp;<b>|</b>&nbsp;</span>
             <a href="/contact">Contact</a>
           </p>
         </div>
-        
+
       </div>
     </footer>
 

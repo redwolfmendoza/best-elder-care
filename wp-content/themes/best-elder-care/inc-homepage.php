@@ -38,7 +38,7 @@
 
 		</div><!--/.bc-hp-section-->
 		<div id="bc-hp-skills" class="row bc-hp-section">
-			<div class="col-sm-10 col-sm-offset-1 bc-ui-intro text-center">
+			<div class="col-xs-12 col-sm-10 col-sm-offset-1 bc-ui-intro text-center">
 
 				<a id="homepage-skills" class="bc-anchor-link"></a>
 				<div class="bc-quote">
