@@ -93,12 +93,12 @@ wp-content/themes/besteldercare/.sass-cache
 # GRUNT #
 #########
 
-Gruntfile.js
-gruntfile.js
-grunt-config.json
+#Gruntfile.js
+#gruntfile.js
+#grunt-config.json
 gruntfile-sample.php
-package.json
-package-lock.json
+#package.json
+#package-lock.json
 package-sample.json
 
 
