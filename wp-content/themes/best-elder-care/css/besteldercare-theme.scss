@@ -47,7 +47,28 @@ body {
     padding: 0;
     margin: 0;
     width: 100%;
+
+    .cta-banner {
+        width: 100%;
+        padding: 10px 30px;
+
+        a {
+            display: block;
+            font-family: $mediumtext;
+            font-size: 20px;
+            line-height: 26px;
+
+            i {
+                font-size: inherit;
+                line-height: inherit;
+            }
+        }
+    }
 }
+
+
+
+
 
 
 
@@ -299,6 +320,12 @@ body {
     float: none;
     cursor: normal;
 }
+
+
+
+
+
+
 
 
 
@@ -701,6 +728,12 @@ body.home {
 
 
 }
+
+
+
+
+
+
 
 
 
