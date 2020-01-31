@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="redwolfmendoza@gmail.com">
 
-    <title>Best Elder Care</title>
+    <title><?php echo get_bloginfo( 'name' ); ?></title>
     
 
     <!-- Bootstrap -->

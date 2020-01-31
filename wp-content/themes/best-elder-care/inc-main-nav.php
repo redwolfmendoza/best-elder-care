@@ -2,7 +2,7 @@
 	$navlinks = array();
 	
 	$navLinks['home']['pageName'] = 'Home';
-	$navLinks['home']['url'] = 'home';
+	$navLinks['home']['url'] = '';
 	$navLinks['home']['pageId'] = '7'; //update this after db migration
 	$navLinks['home']['faIcon'] = 'fas fa-home';
 	$navLinks['home']['activePage'] = false;
