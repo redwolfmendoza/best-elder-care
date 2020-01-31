@@ -27,7 +27,4 @@
 
   <body class="<?php print $bodyClass; ?>">
     
-    <?php
-      include('inc-cta-banner.php');
-      include('inc-main-nav.php');
-    ?>
+    <?php include('inc-main-nav.php'); ?>

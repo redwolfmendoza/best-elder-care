@@ -21,6 +21,8 @@
 
 
 	$currentPageId = get_the_ID();
+	//TODO:: pageid is null, fix...
+	//print "<!--PAGE-ID:".$currentPageId."-->";
 	if( is_front_page() || is_home() ):
 		$navLinks['home']['activePage'] = true;
 	endif;
@@ -28,6 +30,13 @@
 
 
 <nav id="main-nav" class="main-nav-container" role="navigation">
+	<div class="cta-banner">
+
+		<a href="tel:+18185551234">
+			Call: (818) 555-1234
+		</a>
+
+	</div>
 	<div class="main-nav-wrapper">
 
 		<a class="nav-logo" href="/">
@@ -40,6 +49,7 @@
 			<?php 
 				foreach( $navLinks  as $navLinkObj){
 
+					//TODO:: make menu link active, depending on current page...
 					if( $currentPageId == $navLinkObj['pageId']):
 						print '<li class="active">';
 					else:

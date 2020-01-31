@@ -10,24 +10,19 @@
 				<a id="homepage-welcome" class="bc-anchor-link"></a>
 				<h2>High-End Elder Care Services Covered by Your MediCal and PPO</h2>
 				<p>
-					At Best Elder Care, Inc. we specialize in providing individualized senior wellness/care programs for the unique 
+					At Best Elder Care, Inc. we specialize in providing individualized compassionate senior wellness/care programs for the unique 
 					needs that each client presents.
 				</p>
 				<p>
 					We use compassionate, board-certified, multidisciplinary techniques to care for your seniors.
 				</p>
 				<p>
-					We're also here to listen to your questions and concerns and help you get answers. Call us toll-free at:
+					We're also here to listen to your questions and help you get answers. Call us today:
 				</p>
-				<p class="phone">
-					<a href="tel:1-818-555-1234">
-						<i class="fas fa-phone-alt"></i>
-						818-555-1234
-					</a>
-				</p>
-				<p class="small">
-					Choose Best Elder Care, Inc. - proudly serving the Los Angeles county since 2008.
-				</p>
+				<a class="phone-button-link" href="tel:+18185551234">
+					<i class="fas fa-phone-alt"></i>
+					(818) 555-1234
+				</a>
 			</div>
 
 			<div class="bc-ui-scrolldown">
