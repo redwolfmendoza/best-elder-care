@@ -866,20 +866,20 @@ footer {
     width: 100%;
     min-height: 100px;
     padding: 40px 60px;
-    background-color: #fff;
+    background-color: $darkgreen;
     font-family: $lighttext;
-    font-size: 16px;
+    font-size: 14px;
+    color: #fff;
     line-height: 20px;
-    color: $darkgray;
     box-shadow: -4px -2px 4px $medgray;
 
     a {
         font-family: $lighttext;
         font-weight: bold;
-        color: $darkgreen;
+        color: #fff;
 
         &:hover {
-            color: $darkgreen;
+            color: #fff;
             text-decoration: underline;
         }
     }

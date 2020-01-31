@@ -50,12 +50,15 @@
 				foreach( $navLinks  as $navLinkObj){
 
 					//TODO:: make menu link active, depending on current page...
+					/*
 					if( $currentPageId == $navLinkObj['pageId']):
 						print '<li class="active">';
 					else:
 						print '<li>';
 					endif;
+					*/
 
+					print '<li>';
 					print '<a href="/'. $navLinkObj['url'] .'"><i class="'. $navLinkObj['faIcon'] .'"></i> '. $navLinkObj['pageName'] .'</a>';
 					print '</li>';
 					
