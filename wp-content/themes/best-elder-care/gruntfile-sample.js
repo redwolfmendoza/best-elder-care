@@ -6,7 +6,6 @@
     $ sudo npm install grunt-contrib-sass
     $ sudo npm install grunt-contrib-uglify
     $ sudo npm install grunt-cssbeautifier
-    $ sudo npm install grunt-contrib-watch
     
 */
 
@@ -22,8 +21,9 @@ module.exports = function(grunt) {
         watch: {
             scripts: {
                 files: [
-                    'css/besteldercare-theme.scss',
-                    'js/bc-script.js'
+                    'css/scss/style.scss',
+                    'css/scss/onetrust-custom.scss',
+                    'js/source/my.js'
                 ],
                 tasks: ['default'],
                 options: {
