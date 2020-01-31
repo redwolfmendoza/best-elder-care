@@ -51,8 +51,66 @@ body {
     width: 100%;
 }
 
+footer {
+    display: block;
+    width: 100%;
+    min-height: 100px;
+    padding: 40px 60px;
+    background-color: $darkgreen;
+    font-family: $lighttext;
+    font-size: 14px;
+    color: #fff;
+    line-height: 20px;
+    box-shadow: -4px -2px 4px $medgray;
+
+    a {
+        font-family: $lighttext;
+        font-weight: bold;
+        color: #fff;
+
+        &:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+    }
+
+    .copyright {
+        margin: 0;
+    }
+
+    .footer-links {
+        margin: 0;
+        text-align: right;
+
+        span {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+
+    //mobile
+    @media (max-width: $sm) {
+        padding: 30px 20px;
+        font-size: 14px;
+        line-height: 20px;
+
+        .footer-links {
+            margin: 20px 0;
+            text-align: center;
+        }
+    }
+}
 
 
+/*-------bc-theme--------*/
+.bc-anchor-link {
+    display: block;
+    width: 100%;
+    height: 0px;
+    float: none;
+    cursor: normal;
+}
+//--------------------bc-theme--------------------//
 
 
 
@@ -64,11 +122,12 @@ body {
     height: 120px;
     padding: 0;
     margin: 0;
+    box-shadow: 0px 2px 4px $lightgray;
     position: fixed;
     top: 0px;
     z-index: 100;
-    box-shadow: 0px 2px 4px $lightgray;
-
+    
+    
     &.wp-admin-bar-fix {
         padding: (10px+ $wpadminheight) 0 10px 0 !important;
         height: (120px + $wpadminheight) !important;
@@ -110,7 +169,6 @@ body {
             }
         }
     }
-
     .main-nav-wrapper {
         width: 100%;
         height: 80px
@@ -146,7 +204,6 @@ body {
         li {
             width: (100%/3); //adjust as number of main nav items change
             height: inherit;
-            
             margin: 0;
             padding: 0;
             float: left;
@@ -228,17 +285,14 @@ body {
                 margin: 0 auto;
             }
         }
-
         .main-nav-wrapper {
             height: 60px;
         }
-
         .nav-logo {
             width: 240px;
             height: 55px;
             margin: 5px 0 0 15px;
         }
-
         .mobile-menu-button {
             float: right;
             display: block;
@@ -329,20 +383,7 @@ body {
     }
 
 
-}
-
-
-.bc-anchor-link {
-    display: block;
-    width: 100%;
-    height: 0px;
-    float: none;
-    cursor: normal;
-}
-
-
-
-
+}//--------------------main-nav--------------------//
 
 
 
@@ -352,27 +393,228 @@ body {
 /*-------homepage--------*/
 body.home {
 
+    .bc-bg-section {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    
+        .bg-1 {
+            background-image: url('../images/desert.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .bg-2 {
+            background-image: url('../images/forest.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .bg-3 {
+            background-image: url('../images/lake.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .placeholder-col {
+            min-height: 240px;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    .bc-hp-section {
+        padding: 0 60px;
+
+        .bc-ui-intro {
+            p {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+        .bc-hp-skill-list {
+            p {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+        .bc-quote {
+
+            h1, h2, h3, h4 {
+                font-size: 42px;
+                line-height: 64px;
+                margin: 0;
+
+                i {
+                    font-size: 52px;
+                    line-height: 64px;
+                }
+            }
+
+            .quote-anchor {
+                display: inline-block;
+                position: relative;
+                width: 1px;
+                height: 64px;
+
+                .fa-quote-left {
+                    position: absolute;
+                    margin-right: 20px;
+                    top: 0px;
+                    left: -80px;
+                }
+
+                .fa-quote-right {
+                    position: absolute;
+                    margin-left: 20px;
+                    top: 0px;
+                    left: 0px;
+                }
+            }
+        }
+    }    
+    .bc-ui-intro {
+        background-color: #fff;
+
+        h1, h2, h3, p, a {
+            font-weight: 300;
+        }
+        h1, h2, h3 {
+            font-family: $mediumtext;
+            font-size: 42px;
+            line-height: 50px;
+            margin: 0 0 40px 0;
+            color: $darkgray;
+        }            
+        p {
+            font-family: $lighttext;
+            font-size: 20px;
+            line-height: 26px;
+            color: $medgray;
+            margin: 0 0 20px 0;
+
+            &.small {
+                font-size: 14px;
+                line-height: 20px;
+                margin: 0 0 20px 0;
+            }
+        }
+        a {
+            color: $darkgreen;
+        }
+
+        .phone-button-link {
+            cursor: pointer;
+            display: block;
+            width: 320px;
+            height: 60px;
+            margin: 40px auto 20px;
+            padding: 5px 15px;
+            background-color: #fff;
+            border: 5px solid $darkgreen;
+            border-radius: 10px;
+            font-family: $mediumtext;
+            font-size: 20px;
+            line-height: 40px;
+            color: $darkgreen;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+
+            i {
+                margin-right: 8px;
+            }
+
+            &:hover {
+                background-color: $darkgreen;
+                color: #fff;
+                box-shadow: 0px 2px 4px $darkgray;
+            }
+        }
+    }
+    .bc-ui-scrolldown {
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        width: 80px;
+        margin-left: -40px;
+
+        .bc-ui-roundbutton {
+            cursor: pointer;
+            float: none;
+            clear: both;
+            display: block;
+            text-align: center;
+            height: 80px;
+            width: 80px;
+            background-color: #fff;
+            border: 10px solid $darkgreen;
+            border-radius: 30px;
+            transition: background-color 0.2s ease, border-color 0.2s ease;
+
+            i {
+                float: none;
+                clear: both;
+                text-align: center;
+                color: $darkgreen;
+                font-size: 36px;
+                line-height: 60px;
+                margin: 0 auto;
+                transition: color 0.2s ease;
+            }
+
+            &:hover {
+                background-color: $darkgreen;
+                border: 10px solid $darkgreen;
+                box-shadow: 0px 2px 4px $darkgray;
+
+                i {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    
+    
+    
     .home-container {
         width: 100%;
         padding: 0;
         margin: 90px 0 0 0;
-    
+        
+        .bc-hp-section {
+            .hp-bg-1 {
+                background-image: url('../images/eldercare-1.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .hp-bg-2 {
+                background-image: url('../images/eldercare-2.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .hp-bg-3 {
+                background-image: url('../images/eldercare-3.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+
         //mobile
         @media (max-width: $sm) {
             padding: 0 !important;
             margin: 60px 0 0 0 !important;
-        }
-    
-        .bc-hp-section {
-            padding: 0 60px;
-        
-            //mobile
-            @media (max-width: $sm) {
+
+            .bc-hp-section {
                 padding: 15px 30px;
             }
         }
     }
-
+    
     #bc-hp-welcome {
         position: relative;
         padding: 0;
@@ -392,122 +634,14 @@ body.home {
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-        }    
+        }
         
-        .bc-ui-intro {
-            background-color: #fff;
-    
-            h1, h2, h3, p, a {
-                font-weight: 300;
-            }
-            h1, h2, h3 {
-                font-family: $mediumtext;
-                font-size: 42px;
-                line-height: 50px;
-                margin: 0 0 40px 0;
-                color: $darkgray;
-            }            
-            p {
-                font-family: $lighttext;
-                font-size: 20px;
-                line-height: 26px;
-                color: $medgray;
-                margin: 0 0 20px 0;
-
-                &.small {
-                    font-size: 14px;
-                    line-height: 20px;
-                    margin: 0 0 20px 0;
-                }
-            }
-            a {
-                color: $darkgreen;
-            }
-
-            .phone-button-link {
-                cursor: pointer;
-                display: block;
-                width: 320px;
-                height: 60px;
-                margin: 40px auto 20px;
-                padding: 5px 15px;
-
-                background-color: #fff;
-                border: 5px solid $darkgreen;
-                border-radius: 10px;
-
-                font-family: $mediumtext;
-                font-size: 20px;
-                line-height: 40px;
-                color: $darkgreen;
-                text-align: center;
-                text-decoration: none;
-                transition: background-color 0.2s ease;
-
-                i {
-                    margin-right: 8px;
-                }
-
-                &:hover {
-                    background-color: $darkgreen;
-                    color: #fff;
-                    box-shadow: 0px 2px 4px $darkgray;
-                }
-            }
-
-        }
-    
-
-        .bc-ui-scrolldown {
-            position: absolute;
-            bottom: -30px;
-            left: 50%;
-            width: 80px;
-            margin-left: -40px;
-
-            .bc-ui-roundbutton {
-                cursor: pointer;
-                float: none;
-                clear: both;
-                display: block;
-                text-align: center;
-                height: 80px;
-                width: 80px;
-                background-color: #fff;
-                border: 10px solid $darkgreen;
-                border-radius: 30px;
-                transition: background-color 0.2s ease, border-color 0.2s ease;
-
-                i {
-                    float: none;
-                    clear: both;
-                    text-align: center;
-                    color: $darkgreen;
-                    font-size: 36px;
-                    line-height: 60px;
-                    margin: 0 auto;
-                    transition: color 0.2s ease;
-                }
-    
-                &:hover {
-                    background-color: $darkgreen;
-                    border: 10px solid $darkgreen;
-                    box-shadow: 0px 2px 4px $darkgray;
-
-                    i {
-                        color: #fff;
-                    }
-                }
-            }
-        }
-
         //mobile
         @media (max-width: $sm) {
 
             .bc-ui-scrolldown {
                 display: none;
             }
-
             .hp-bg-1 {
                 height: 320px;
             }
@@ -538,7 +672,7 @@ body.home {
             }
             
         }
-
+        
         //tablet and bigger
         @media (min-width: $md) {
             .hp-bg-1,
@@ -555,51 +689,38 @@ body.home {
         }
     }
     
+    #bc-hp-quote,
     #bc-hp-services,
     #bc-hp-skills {
-        padding: 160px 40px 100px 40px;
         background-color: $darkgreen;
-        color: #fff;
-    
+        
+        h1, h2, h3, p, a {
+            color: #fff;
+        }
+
         .bc-ui-intro {
-            padding: 0 60px;
+            background-color: $darkgreen;
+        }
+    }
     
-            .bc-quote {
-                max-width: 1200px;
-                margin: 0 auto 140px auto;
-    
-                h1, h2, h3, h4 {
-                    font-size: 42px;
-                    line-height: 64px;
-                    margin: 0;
-        
-                    i {
-                        font-size: 52px;
-                        line-height: 64px;
-                    }
-                }
-    
-                .quote-anchor {
-                    display: inline-block;
-                    position: relative;
-                    width: 1px;
-                    height: 64px;
-        
-                    .fa-quote-left {
-                        position: absolute;
-                        margin-right: 20px;
-                        top: 0px;
-                        left: -80px;
-                    }
-        
-                    .fa-quote-right {
-                        position: absolute;
-                        margin-left: 20px;
-                        top: 0px;
-                        left: 0px;
-                    }
-                }
-            }
+    #bc-hp-quote {
+        padding: 140px 40px 120px 40px;
+
+        .bc-ui-intro {
+            h1, h2, h3, h4, p, a {
+                font-family: $seriftext;
+                color: #fff;
+            }            
+        }
+    }
+
+    #bc-hp-services,
+    #bc-hp-skills {
+        padding: 120px 40px 100px 40px;
+
+        .bc-ui-intro {
+            padding: 0 60px;  
+            
     
             h1, h2, h3, h4, p, a {
                 font-family: $seriftext;
@@ -607,27 +728,30 @@ body.home {
             h1, h2, h3, h4 {
                 font-size: 32px;
                 line-height: 42px;
-                margin: 0 0 20px 0;
+                margin: 0 0 80px 0;
             }
             p {
-                font-size: 18px;
-                line-height: 24px;
                 margin: 0 0 60px 0;
             }
     
             .bc-hp-skill-list {
                 padding: 0 0 60px 0;
     
+                p,
+                a,
+                i,
+                .skill-heading {
+                    color: #fff;
+                }
+                p {
+                    margin: 0 0 60px 0;
+                }
                 i {
                     font-size: 72px;
                     line-height: 78px;
                     margin-bottom: 10px;
                 }
-                p {
-                    font-size: 16px;
-                    line-height: 20px;
-                    margin: 0 0 60px 0;
-                }
+                
     
     
                 .col-sm-3,
@@ -671,98 +795,13 @@ body.home {
 
                     .quote-anchor {
                         display: none;
-                        /*
-                        i {
-                            font-size: 20px;
-                            line-height: 24px;
-                        }
-
-                        .fa-quote-left {
-                            left: 0px;
-                        }
-                        .fa-quote-right {
-                            left: 0px;
-                        }
-                        */
                     }
                 }
             }
         }
     }
     
-    
-    #bc-hp-clients {
-        padding: 100px 0 100px 0;
-        background-color: $offwhite;
-        background-image: url('../images/clients-1.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: #fff;
-        
-        .bc-ui-scrolldown {
-            .bc-ui-roundbutton {
-                background-color: none;
-                
-                i {
-                    color: #fff;
-                }
-    
-                &:hover {
-                    background-color: #fff;
-                    box-shadow: 0px 2px 4px $darkgray;
-
-                    i {
-                        color: $darkblue;
-                    }
-                }
-            }
-        }
-    
-        h2, h3, h4, p, a {
-            font-family: $seriftext;
-        }
-    
-        .bc-hp-client-list {
-            padding: 0 0 60px 0;
-    
-            .bc-hp-client {
-                padding: 50px;
-                margin-bottom: 30px;
-                min-height: 240px;
-                background-color: #444;
-            }
-    
-            i {
-                font-size: 72px;
-                line-height: 78px;
-                margin-bottom: 10px;
-            }
-            p {
-                font-size: 16px;
-                line-height: 20px;
-                margin: 0 0 60px 0;
-            }
-            a {
-                text-decoration: underline;
-            }
-    
-            //mobile
-            @media (max-width: $sm) {
-                .bc-hp-client {
-                    padding: 30px;
-                    min-height: 180px;
-                }
-            }
-        }
-    }
-
-
-}
-
-
-
-
+}//--------------------homepage--------------------//
 
 
 
@@ -857,56 +896,5 @@ body.page {
         aside {
         }
     }
-}
+}//--------------------all other pages--------------------//
 
-
-
-footer {
-    display: block;
-    width: 100%;
-    min-height: 100px;
-    padding: 40px 60px;
-    background-color: $darkgreen;
-    font-family: $lighttext;
-    font-size: 14px;
-    color: #fff;
-    line-height: 20px;
-    box-shadow: -4px -2px 4px $medgray;
-
-    a {
-        font-family: $lighttext;
-        font-weight: bold;
-        color: #fff;
-
-        &:hover {
-            color: #fff;
-            text-decoration: underline;
-        }
-    }
-
-    .copyright {
-        margin: 0;
-    }
-
-    .footer-links {
-        margin: 0;
-        text-align: right;
-
-        span {
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-    }
-
-    //mobile
-    @media (max-width: $sm) {
-        padding: 30px 20px;
-        font-size: 14px;
-        line-height: 20px;
-
-        .footer-links {
-            margin: 20px 0;
-            text-align: center;
-        }
-    }
-}

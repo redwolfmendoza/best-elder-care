@@ -26,23 +26,37 @@
 			</div>
 
 			<div class="bc-ui-scrolldown">
-				<div class="bc-ui-roundbutton" data-target="#homepage-skills">
+				<div class="bc-ui-roundbutton" data-target="#homepage-services">
 					<i class="fas fa-arrow-down"></i>
 				</div>
 			</div>
 
 		</div><!--/.bc-hp-section-->
-		<div id="bc-hp-skills" class="row bc-hp-section">
+		<div id="bc-hp-quote" class="row bc-hp-section">
 			<div class="col-xs-12 col-sm-10 col-sm-offset-1 bc-ui-intro text-center">
 
-				<a id="homepage-skills" class="bc-anchor-link"></a>
+				<a id="homepage-quote" class="bc-anchor-link"></a>
 				<div class="bc-quote">
 					<h2>
 						<span class="quote-anchor"><i class="fas fa-quote-left"></i></span>
-						We provide a complete range of specialized, high-quality, board-certified elder care services...
+						We use compassionate, board-certified, multidisciplinary techniques to care for your seniors...
 						<span class="quote-anchor"><i class="fas fa-quote-right"></i></span>
 					</h2>
-				</div>				
+				</div>
+			</div>
+		</div><!--/.bc-hp-section-->
+		<div class="row bc-bg-section">
+			<div class="placeholder-col bg-3 text-center">
+				&nbsp;
+			</div>
+		</div><!--/.bc-hp-section-->
+		<div id="bc-hp-services" class="row bc-hp-section">
+			<div class="col-xs-12 col-sm-10 col-sm-offset-1 bc-ui-intro text-center">
+
+				<a id="homepage-services" class="bc-anchor-link"></a>
+				<h2>
+					We provide a complete range of specialized, high-quality, board-certified elder care services:
+				</h2>
 
 				<div class="row bc-hp-skill-list">
 					<div class="col-sm-4 text-center">
@@ -89,5 +103,10 @@
 					</div>
 				</div>
 
+			</div>
+		</div><!--/.bc-hp-section-->
+		<div class="row bc-bg-section">
+			<div class="placeholder-col bg-1 text-center">
+				&nbsp;
 			</div>
 		</div><!--/.bc-hp-section-->

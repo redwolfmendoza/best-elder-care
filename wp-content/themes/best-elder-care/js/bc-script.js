@@ -76,8 +76,8 @@ function skipDown(htmlID) {
     if( htmlID.indexOf('#') > -1 ){
         setTimeout(function(){
 
-            customOffset = 100;
-            var headerOffset = 100;
+            customOffset = 0;
+            var headerOffset = 160;
             var target = htmlID.substring(1, htmlID.length);                
 
 
